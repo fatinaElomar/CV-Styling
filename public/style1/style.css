@@ -1,0 +1,267 @@
+body{
+ 
+    display: flexs;
+    
+}
+header{
+    flex-direction: row;
+    background-color: grey;
+    margin: 0;
+
+}
+
+h1{
+    color: red;
+    margin: 20px;
+}
+h2{
+    color: red;
+    margin: 20px;
+}
+
+dl{
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    color: white;
+    
+}
+dl a{
+    color: red;
+    background-color: red;
+}
+dt{
+float: left;
+width: 50%;
+background-color: red;
+padding: 0;
+margin: 0;
+color: white;
+width: 25%;
+
+
+}
+dt a{
+    color: red;
+    background-color: black;
+}
+dd{
+float: left;
+width: 50%;
+background-color: black;
+padding: 0;
+margin: 0;
+
+
+}
+dd a{
+    color: red;
+    background-color: black;
+    
+}
+.contact-value{
+    background-color: black;
+    padding-left: 6px;
+   
+}
+.contact-value a{
+    color: rgb(255, 0, 0);
+    background-color: black;
+  
+}
+figure{
+    position: relative;
+    left: 333px;
+    bottom:70px;
+}
+
+#contact{
+    position: absolute;
+    top:70px;
+    right:4px;
+    width: 50%;
+  
+}
+#contact>h3{
+    display: none;
+}
+#wrapper{
+    position: relative;
+    
+}
+.skill[data-skill="5"] span {
+    width: 50%;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+
+.skill[data-skill="3"] span {
+    width: 30%;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+
+.skill[data-skill="1"] span {
+    width: 10%;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+
+.skill[data-skill="9"] span {
+    width: 90%;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+
+.skill[data-skill="7"] span {
+    width: 70%;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+
+div.skill {
+    background-color: lightgrey;
+    margin: 3px;
+    padding: 5px;
+}
+
+.skills-primary, .skills-secondary {
+    padding-top: 15px;
+}
+
+.skills-primary::before {
+    content: "Main";
+    top: 0;
+    left: 0;
+
+}
+.skills-secondary::before {
+    content: "Other";
+    top: 0;
+    left: 0;
+}
+
+.skills-secondary {
+    opacity: 0.6;
+}
+.experience-type{
+    color: red;
+}
+.experience-institution{
+    color: red;
+}
+.experience-location{
+    color: grey;
+}
+.experience-date{
+    color: grey;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;}
+    #about, #competencies, #experiences, #education{
+        width: 49%;
+        margin:5px;
+        
+    }
+  #experience::before{
+    position: relative;
+        position:absolute;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 50%;
+  }
+  
+  section>h3{
+    position: relative;
+    padding-left: 30px;
+    border-bottom: 1px solid rgb(160, 160, 160);
+  }
+  h3::before{
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    top: -2px;
+  left: 0;
+  }
+
+
+  @media (max-width: 767px) {
+    body{
+        padding: 10px;
+    }
+    header{
+        width: 100%;
+        padding: 20px 0;
+        display: block;
+
+    }
+    header>div{
+        display: block;
+        justify-content: center;
+
+    }
+    
+    .content {
+      margin-right: 0;
+      margin-left: 0;
+      padding: 0 15px;
+    }
+    #about{
+        width: 100%;
+        display: block;
+        height: 200px;
+        padding: 20px 0;
+    }
+    #competencies{
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+    }
+    #experiences{
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+    }
+    #education{
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+        left: 10px;
+    }
+    #hobbies{
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+    }
+    #contact{
+        width: 100%;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+       right: 100%;
+       padding: 20px 0;
+    
+    }
+    #contact>h3{
+        display: block;
+        
+    }
+    .contact{
+       display: block;
+       
+    }
+    
+}
