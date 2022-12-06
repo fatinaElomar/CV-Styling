@@ -7,11 +7,12 @@ body {
     width: auto;
 }
 
-header>div {
+header {
     background-color: white;
     margin: 0;
     width: 100%;
     display: flex;
+    
 }
 
 h2 {
@@ -20,11 +21,12 @@ h2 {
 
 img {
     position: relative;
-    bottom: 90px;
+    float:right;
     transform: rotate(-15deg);
     height: 200px;
-    float: right;
+    bottom:60px;
 }
+
 
 h1 {
     border-bottom: 1px solid rgb(156, 154, 154);
@@ -42,7 +44,7 @@ h1 {
     margin-bottom: 8%;
 }
 
-.contact>dt {
+.contact>dt,dd {
     display: none;
 }
 
@@ -56,10 +58,11 @@ h1 {
     display: none;
 }
 
-#contact {
-    position: relative;
-    left: 30%;
-
+#contact >div{
+position: relative;
+flex-wrap: wrap;
+align-content: space-around;
+justify-content: center;
 }
 
 #contact>.contacts>.contact-email {
@@ -67,6 +70,7 @@ h1 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: transparent;
     width: 99px;
     height: 99px;
 }
@@ -324,4 +328,4 @@ section:not(#competencies)>div>div {
         display: flex;
         flex-wrap: wrap;
     }
-}
+}/*update ..........style2*/
