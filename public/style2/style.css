@@ -1,0 +1,327 @@
+body {
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: white;
+    display: flex;
+    width: auto;
+}
+
+header>div {
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+
+h2 {
+    display: none;
+}
+
+img {
+    position: relative;
+    bottom: 90px;
+    transform: rotate(-15deg);
+    height: 200px;
+    float: right;
+}
+
+h1 {
+    border-bottom: 1px solid rgb(156, 154, 154);
+    padding-bottom: 2%;
+}
+
+#about>h3 {
+    display: none;
+}
+
+#about {
+    color: #7a7979;
+    width: 70%;
+    font-size: 120%;
+    margin-bottom: 8%;
+}
+
+.contact>dt {
+    display: none;
+}
+
+/* contact icons*/
+
+#contact>h3 {
+    display: none;
+}
+
+.contact-skype>dd {
+    display: none;
+}
+
+#contact {
+    position: relative;
+    left: 30%;
+
+}
+
+#contact>.contacts>.contact-email {
+    background-image: url(../images/email.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 99px;
+    height: 99px;
+}
+
+#contact>.contacts>.contact-phone {
+    background-image: url(../images/phone.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+#contact>.contacts>.contact-github {
+    background-image: url(../images/github.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+#contact>.contacts>.contact-facebook {
+    background-image: url(../images/facebook.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+/*contact icons*/
+
+.experience-institution {
+    display: none;
+}
+
+.experience-type {
+    color: darkcyan;
+
+}
+
+.experience-location {
+    color: grey;
+    float: right;
+}
+
+.experience-date {
+    color: grey;
+    float: right;
+}
+
+.skills {
+    display: flex;
+}
+
+.skill {
+    margin: 2.2px;
+    background-color: darkcyan;
+    color: white;
+    width: 140px;
+    padding: 5px;
+
+}
+
+.skills-primary .skill {
+    font-size: 25px;
+}
+
+.skills-secondary .skill {
+    font-size: 18px;
+}
+
+.skill[data-skill="5"]::after {
+    float: right;
+    content: "★★★";
+}
+
+.skill[data-skill="3"]::after {
+    float: right;
+    content: "★★";
+}
+
+.skill[data-skill="1"]::after {
+    float: right;
+    content: "★";
+}
+
+.skill[data-skill="9"]::after {
+    float: right;
+    content: "★★★★★";
+}
+
+.skill[data-skill="5"]::after {
+    float: right;
+    content: "★★★";
+}
+
+.skill[data-skill="7"]::after {
+    float: right;
+    content: "★★★★";
+}
+
+
+.content>section:not(:first-child) {
+    display: grid;
+    grid-template-columns: [title] 120px [description] auto;
+    margin-bottom: 15px;
+
+}
+
+.content>section:not(:first-child) h3 {
+    grid-row-end: span 2;
+    padding-right: 10px;
+    border-right: 1px solid #000;
+}
+
+.content>section:not(:first-child) div {
+    grid-column-start: description;
+    margin-left: 10px;
+}
+
+.content ul {
+    list-style-position: inside;
+    margin-left: 10px;
+}
+
+.experience-details {
+    color: #999;
+}
+
+.experience-date-separator {
+    color: #2A9595;
+}
+
+section h4 {
+    color: #2A9595;
+}
+
+section>div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section>div>h4,
+section:not(#competencies)>div>div {
+    flex: 0 0 50%;
+}
+
+.experience-details {
+    margin: 0 !important;
+    text-align: right;
+}
+
+/*media query*/
+
+@media (max-width: 754px) {
+    body {
+        padding: 10px;
+    }
+
+    #wrapper {
+        width: 85%;
+        padding: 0 auto;
+    }
+
+    header {
+        width: 100%;
+        padding: 20px 0;
+        display: block;
+
+    }
+
+    header>div {
+        display: block;
+        justify-content: center;
+
+    }
+
+    img {
+        display: none;
+    }
+
+    .content {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    #about {
+        width: 100%;
+        display: block;
+        height: 200px;
+        padding: 20px 0;
+    }
+
+    #competencies {
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+    }
+
+    #experiences {
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+    }
+
+    .skills>.skills-primary {
+        display: inline;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50px;
+    }
+
+    .skills>.skills-secondary {
+        display: inline;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 50px;
+        height: 50px;
+    }
+
+    #education {
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+        left: 10px;
+    }
+
+    #hobbies {
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+    }
+
+    #contact {
+        width: 100%;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 100%;
+        padding: 20px 0;
+
+    }
+
+    #contact>h3 {
+        display: block;
+
+    }
+
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
